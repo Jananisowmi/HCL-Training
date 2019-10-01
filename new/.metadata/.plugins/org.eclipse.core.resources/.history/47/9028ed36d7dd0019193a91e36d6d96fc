@@ -1,0 +1,68 @@
+package com.hcl.json;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.JSONParser;
+
+public class DecodeReadJson {
+	private static final String empNo = null;
+
+	public static void main(String[] args) {
+		 
+		  JSONParser parser = new JSONParser();
+	        try
+	        {
+	            Object object = parser
+	                    .parse(new FileReader("C:\\Users\\Coalesce\\Downloads\\Employee.json"));
+	            
+	            //convert Object to JSONObject
+	            JSONObject jsonObject = (JSONObject)object;
+	           
+	            //Reading the array
+	            JSONArray object1 = (JSONArray)jsonObject.get("jsonObject");
+	            
+	            //Reading the String
+	            int no=(Integer) jsonObject.get("empNo");
+	            String name = (String) jsonObject.get("empName");
+	            double salary= (Double) jsonObject.get("salary");
+	            String band=(String) jsonObject.get("band");
+	            String dateOfJoin=(String) jsonObject.get("dateOfJoin");
+	            
+	            
+	            //Printing all the values
+	            System.out.println("No: " + empNo);
+	            System.out.println("Name: " + name);
+	            System.out.println("Salary: " +salary);
+	            System.out.println("Band: " +band);
+	            System.out.println("DateOfJoin: " +dateOfJoin);
+	            for(Object employee : Employee)
+	            {
+	                System.out.println("\t"+employee.toString());
+	            }
+	        }
+	        catch(IOException fe)
+	        {
+	            fe.printStackTrace();
+	        }
+	        catch(Exception e)
+	        {
+	            e.printStackTrace();
+	        }
+	    }
+			try {
+				 if (objReader != null)
+				     objReader.close();
+			}
+			
+				catch (IOException e) {
+			
+				e.printStackTrace();
+			
+		}
+	}
+}

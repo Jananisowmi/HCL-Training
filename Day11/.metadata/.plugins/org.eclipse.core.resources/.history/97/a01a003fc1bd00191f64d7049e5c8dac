@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+function fullname() {
+	var fname=frmName.firstName.value;
+	var lname=frmData.lastName.value;
+	var fullname=fname+lname;
+	frmName.fullName.value=fullName;
+
+	
+}

@@ -1,0 +1,66 @@
+package com.hcl.json;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+import com.hcl.json.model.Employee;
+
+public class ParseJson {
+
+@SuppressWarnings("unchecked")
+public static void main(String[] args) throws IOException {
+
+
+StringBuilder contentBuilder = new StringBuilder();
+    
+   try (Stream<String> stream= Files.lines( Paths.get("C:\\Users\\Coalesce\\Downloads\\Employee1.json"), StandardCharsets.UTF_8))
+   {
+       stream.forEach(s -> contentBuilder.append(s));
+   }
+   catch (IOException e)
+   {
+       e.printStackTrace();
+   }
+   String s= contentBuilder.toString();
+   Object obj=JSONValue.parse(s);
+   
+   JSONObject jsonObject = (JSONObject) obj;  
+   JSONObject jsonobj=(JSONObject) jsonObject.get("employees");
+   JSONArray array=(JSONArray) jsonobj.get("employee");
+   ArrayList<Employee> obj2=new ArrayList();
+   for(int i=0;i<array.size();i++){
+	   Employee emp=new Employee();
+    JSONObject object=(JSONObject) array.get(i);
+    int empNo = (Integer) object.get("empNo");  
+    emp.setEmpNo(empNo);
+    
+    String empName = (String)object.get("empName"); 
+    emp.setEmpName(empName);
+   long salary = (long) object.get("salary");
+   emp.setSalary(salary);
+   String band = (String) object.get("band");
+   emp.setBand(band);
+   String dateOfJoin = (String) object.get("dateOfJoin");  
+   emp.setDateOfJoin(dateOfJoin);
+   
+   System.out.println(empNo+" "+empName+" "+salary+" "+band+" "+dateOfJoin); 
+   obj2.add(emp);
+   
+   }  
+   obj2.forEach((var)-> System.out.println(var));
+}  
+}
+
+

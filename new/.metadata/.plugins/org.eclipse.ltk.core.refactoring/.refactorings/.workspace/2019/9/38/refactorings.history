@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AnnotationClient&apos;" deleteContents="false" description="Delete resource &apos;AnnotationClient&apos;" element1="/AnnotationClient" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1568887680529"/>
+</session>

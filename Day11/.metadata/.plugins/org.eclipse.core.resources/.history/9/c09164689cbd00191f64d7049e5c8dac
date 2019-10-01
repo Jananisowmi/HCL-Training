@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function attDemo() {
+	var res="";
+	if(frmAtt.chkJanani.checked==true) {
+		res+="Janani is present <br/>";
+	} else {
+		res+="Janani is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+	}
+
+
+	
+	if(frmAtt.Hema.checked==true) {
+		res+="Hema is present <br/>";
+	} else {
+		res+="Hema is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+	}
+
+
+
+	if(frmAtt.Raghu.checked==true) {
+		res+="Raghu is present <br/>";
+	} else {
+		res+="Raghu is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+	}
+
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <form name="frmAtt">
+  <center>
+   Anisha :
+   <input type="checkbox" name="chkAnisha" onchange="attDemo()" />
+   <br/><br/>
+  
+   Janani :
+   <input type="checkbox" name="chkJanani" onchange="attDemo()" />
+   <br/><br/>
+  
+   Hema :
+   <input type="checkbox" name="chkHema" onchange="attDemo()" />
+   <br/><br/>
+  
+   Raghu :
+   <input type="checkbox" name="chkRaghu" onchange="attdemo()"/>
+   <br/><br/>
+   <span id="res">
+   
+   
+   
+   
+   </span>
+  
+  
+  
+  
+  </center>
+  
+  
+  
+  
+  
+  </form>
+
+</body>
+</html>

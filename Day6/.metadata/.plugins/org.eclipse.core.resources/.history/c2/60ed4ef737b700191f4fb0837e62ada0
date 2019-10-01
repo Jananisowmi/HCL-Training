@@ -1,0 +1,17 @@
+package com.hcl.collec;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenEmploy {
+	public static void main(String[] args) {
+		List<Employ> lstEmploy = new ArrayList<Employ>();
+		lstEmploy.add(new Employ(1, "Divya", 12345));
+		lstEmploy.add(new Employ(1, "Divya", 12345));
+		lstEmploy.add(new Employ(1, "Divya", 12345));
+		lstEmploy.add(new Employ(1, "Divya", 12345));
+		lstEmploy.add(new Employ(1, "Divya", 12345));
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.jaanu.samples.java8;
+
+public interface DefaultInterface {
+
+}

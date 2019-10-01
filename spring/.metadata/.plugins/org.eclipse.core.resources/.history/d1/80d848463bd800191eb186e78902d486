@@ -1,0 +1,12 @@
+package com.jaanu.samples.java8;
+
+public class MultiInterfaceClass {
+	public static void main(String[] args) {
+		MultiInterface multiInterface=(String name)->(return name;);
+		String name1=multiInterface.sayHello("Janani");
+		System.out.println(name1);
+		
+		
+
+}
+}

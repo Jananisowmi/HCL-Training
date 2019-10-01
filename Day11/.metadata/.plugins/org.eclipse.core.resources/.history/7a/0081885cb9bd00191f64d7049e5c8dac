@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+function add() {
+	var firstName=frmData.firstName.value;
+	var LastName=frmData.lastName.value;
+	var add=frmData.firstName.value+" "+frmData.lastName.value;
+	frmData.fullName.value=add;
+	
+}

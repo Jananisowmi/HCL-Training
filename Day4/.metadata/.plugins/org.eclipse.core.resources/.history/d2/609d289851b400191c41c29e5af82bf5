@@ -1,0 +1,44 @@
+package com.hcl.ex;
+
+public class Custom2 {
+/**
+ *  Main function for business logic 
+ *  @param email is the parameter.
+ *  @throws InvalidEmailException is the method.
+ *  @throws InvalidUserNameException is the throwing method.
+ */
+  public void checkEmail(String email)throws InvalidEmailException, InvalidUserNameException {
+    boolean flag = true;
+    if (email.indexOf("@") == -1) {
+      throw new InvalidEmailException("Invalid Email");
+    }
+    if (email.indexOf("@") > 12) {
+      flag = false;
+      throw new InvalidUserNameException("Invalid User");
+    }
+    if (flag = true) {
+      System.out.println("Email" + email);
+    }
+  }
+  
+/**
+ * Method used for business logic.  
+ * @param args for reading the files.
+ */
+
+  public static void main(String[] args) {
+    String email = "jananivelu@76gmail.com";
+    try {
+      new Custom2().checkEmail(email);
+	
+	} catch (InvalidEmailException | InvalidUserNameException e) {
+		
+		e.printStackTrace();
+	}
+	
+	
+}	
+}
+
+	
+

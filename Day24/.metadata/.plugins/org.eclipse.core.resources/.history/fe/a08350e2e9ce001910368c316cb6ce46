@@ -1,0 +1,27 @@
+package com.hcl.hib;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class CollegeCrud {
+	
+	public String insertSubject(Subject subject) {
+		 SessionFactory sf=HibernateUtil.getConnection();
+		 Session s=sf.openSession();
+		 Transaction t=s.beginTransaction();
+		 s.save(subject);
+		 t.commit();
+		 return "Record Inserted....";
+	}
+	
+	public List<String> showEmploy() {
+		SessionFactory sf=HibernateUtil.getConnection();
+		Session s=sf.openSession();
+		Query q=s.createQuery("select distinct instructor from subjects");
+		List<String> lstins=q.list();
+		return lstins;
+}

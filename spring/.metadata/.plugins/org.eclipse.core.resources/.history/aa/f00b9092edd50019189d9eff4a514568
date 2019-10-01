@@ -1,0 +1,9 @@
+package com.jaanu.samples.java8;
+
+public class WithLambdaExpression {
+	public static void main(String[] args) {
+		MyInterface myinterface=() -> { System.out.println("Welcome Lambda"); };
+		myinterface.sayMessage();	
+	}
+
+}

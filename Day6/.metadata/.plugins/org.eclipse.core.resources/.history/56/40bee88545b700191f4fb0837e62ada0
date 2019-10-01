@@ -1,0 +1,18 @@
+package com.hcl.collec;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenStudent {
+	public static void main(String[] args) {
+		List<Student> lstStudent = new ArrayList<Student>();
+		lstStudent.add(new Student(1, "Divya", "Loosu","Cbe",8));
+		lstStudent.add(new Student(2, "Anisha", "Giri","Cbe",9));
+		lstStudent.add(new Student(3, "Hema", "Shiva","pondi",6));
+		lstStudent.add(new Student(4, "Priya", "Sree","Trichi",5));
+		lstStudent.add(new Student(5, "Jaanu", "virat","Cbe",7));
+		System.out.println("Student List");
+		lstStudent.forEach(System.out::println);
+	}
+
+}

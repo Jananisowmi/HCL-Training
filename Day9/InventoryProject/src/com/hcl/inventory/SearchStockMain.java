@@ -1,0 +1,24 @@
+package com.hcl.inventory;
+
+import java.util.Scanner;
+
+
+
+public class SearchStockMain {
+	public static void main(String[] args) {
+		String stockId;
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter stockId ");
+		stockId=sc.next();
+		Stock objStock=StockBAL.searchStockBal(stockId);
+		if(objStock!=null) {
+			System.out.println("ItemName" +objStock.getItemName());
+			System.out.println("Price" +objStock.getPrice());
+			System.out.println("QuantityAvail" +objStock.getQuantityAvail());
+		} else {
+			System.out.println("StockId Not Found");
+
+}
+	}
+}

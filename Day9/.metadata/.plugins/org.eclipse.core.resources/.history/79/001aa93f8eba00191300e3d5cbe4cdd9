@@ -1,0 +1,23 @@
+package com.hcl.inventory;
+
+public class StockBAL {
+	
+	public static Stock searchStockBal(String stockId) {
+		return new StockDAO().searchStockDao(stockId);
+	}
+	
+	public static String placeOrderBal(String stockId,int qtyOrd) {
+		return new StockDAO().placeOrder(stockId, qtyOrd);
+	}
+	public static int generateOrderidBal(){
+		return new StockDAO().generateOrderIdDao();
+	}
+	
+	public static String addStockBal(Stock objStock) {
+		return new StockDAO().addStock(objStock);
+	}
+	public static String generateStockBal() {
+		return new StockDAO().generateStockDao();
+	}
+}
+

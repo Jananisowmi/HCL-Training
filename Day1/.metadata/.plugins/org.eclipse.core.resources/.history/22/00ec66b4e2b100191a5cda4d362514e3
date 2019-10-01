@@ -1,0 +1,43 @@
+package com.hcl.java;
+
+public class SbExample {
+	
+	public void show(int age, String name, String course, String city){
+		
+		StringBuilder sbError=new StringBuildr();
+		boolean isvalid=true;
+		if(age<=20) {
+			sbError.append("Age must be greater than 20" + "\r\n");
+			isValid=false;
+		}
+		if(name.indexOf('')== -1) {
+			sbError.append("Name Contains both firstname and Lastname" + "\r\n");
+			isValid=false;
+		}
+		if(!course.equalsIgnorecase("Java")){
+			sbError.append("Only Java course Allowed" + "\r\n");
+			isValid=false;
+			
+		}
+		if(isValid==true) {
+		System.out.println("Age " +age);
+		System.out.println("Name " +name);
+		System.out.println("Course" +course);
+		System.out.println("City" +city);
+	} else {
+		System.out.println(sbError);
+	}
+	
+	public static void main(String[] args) {
+        int age;
+        String name;
+        String course;
+        String city;
+        age=11;
+        name="Janani velu";
+        course="Java";
+        city="Delhi";
+        new SbExample().show(age, name, course, city);
+	}
+
+}

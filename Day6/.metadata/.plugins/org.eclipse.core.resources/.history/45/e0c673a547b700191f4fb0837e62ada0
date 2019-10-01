@@ -1,0 +1,36 @@
+package com.hcl.collec;
+
+interface IHello{
+	void sayHello();
+}
+   interface ICalc {
+	   int calc(int a, int b);
+   }
+
+public class Lamda2 {
+public static void main(String[] args) {
+	IHello h1 = ()-> {
+		System.out.println("Hello from janu...");
+	};
+	
+	IHello h2 = () -> {
+		System.out.println("hello from virat..");
+	};
+	
+	IHello h3 = () -> {
+		System.out.println("Hello from anisha..");
+	};
+	IHello[] arr = new IHello[]{h1,h2,h3};
+	for (IHello iHello : arr) {
+		iHello.sayHello();
+	}
+//	h1.sayHello();
+//	h2.sayHello();
+//	h3.sayHello();
+
+	}
+   ICalc ad1=(a,b) -> {
+	   System.out.println("Sum");
+	   return a+b;
+   }
+}

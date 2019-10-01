@@ -1,0 +1,16 @@
+package com.hcl.boxing;
+
+
+public class P2 {
+	public void show(Object ob) {
+	if(ob=="ABC") {
+		System.out.println("Correct A and D");
+	} else {
+		System.out.println("Error B and C");
+	}
+	public static void main(string[] args {
+		String
+	})
+	}
+
+}

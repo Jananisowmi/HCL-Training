@@ -1,0 +1,19 @@
+package hcl.com.practice;
+
+
+public class Attendence {
+	
+	public static void show(String... name) {
+		 for (String s : name) {
+			 System.out.println(s + " ");
+		 }
+		 System.out.println();
+
+	}
+		  public static void main(String[] args) {
+			  show();
+			  show("Visa" , "Prem");
+			  show("Visa","Prem","Praveen","Janani","Jehan");
+			  show("Rishab","Anisha","Sai");
+		  }
+}

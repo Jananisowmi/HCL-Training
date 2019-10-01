@@ -1,0 +1,7 @@
+package com.hcl.fi;
+
+public interface MyInterface {
+	public void someMethod(String name);
+	
+
+}

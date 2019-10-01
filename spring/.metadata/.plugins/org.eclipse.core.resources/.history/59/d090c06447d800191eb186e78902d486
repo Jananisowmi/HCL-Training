@@ -1,0 +1,11 @@
+package com.hcl.fi;
+
+public class MethodReferenceStaticMain {
+	public static void main(String[] args) {
+	MethodReferenceStatic static1=(a) -> {return "Welcome" + a;};
+	System.out.println(static1.satHello(22));
+	
+	
+	}
+
+}

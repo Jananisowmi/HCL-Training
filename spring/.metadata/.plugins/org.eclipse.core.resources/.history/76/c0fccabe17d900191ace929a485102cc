@@ -1,0 +1,5 @@
+package com.janu.java8streams.service;
+
+public interface ExamService {
+
+}

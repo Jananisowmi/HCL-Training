@@ -1,0 +1,15 @@
+package com.jaanu;
+
+import java.rmi.RemoteException;
+
+
+
+
+public class MainApp {
+	public static void main(String[] args) {
+		int result=0;
+		int result1=0;
+		int result2=0;
+	
+
+}

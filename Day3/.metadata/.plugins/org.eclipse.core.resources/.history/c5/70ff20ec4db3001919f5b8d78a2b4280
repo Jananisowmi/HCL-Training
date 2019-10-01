@@ -1,0 +1,28 @@
+package hcl.com.practice;
+
+
+public class Attendence {
+	public static void display(Object...ob){
+		for (Object object : ob) {
+			System.out.print(object + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void show(int day,String... name) {
+		 for (String s : name) {
+			 System.out.print(day + " " +s + " ");
+		 }
+		 System.out.println();
+
+	}
+		  public static void main(String[] args) {
+			  show(1);
+			  show(2,"Visa" , "Prem");
+			  show(3,"Visa","Prem","Praveen","Janani","Jehan");
+			  show(4,"Rishab","Anisha","Sai");
+			  
+			  display();
+			  display("Ram", 12,true,12.5);
+		  }
+}

@@ -1,0 +1,11 @@
+package com.hcl.fi;
+
+public class EmployeeConstructorMain {
+ public static void main(String[] args) {
+	 EmployeeInterface e=Employee::new;
+	 Employee e1=e.employee(21, "Jaanu");
+	 System.out.println(e1.getEmpNo());
+	 System.out.println(e1.getEmpName());
+	
+}
+}

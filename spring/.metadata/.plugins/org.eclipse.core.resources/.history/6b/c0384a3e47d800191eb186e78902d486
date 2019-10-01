@@ -1,0 +1,11 @@
+package com.hcl.fi;
+
+public interface MethodReferenceStatic {
+	public String satHello(Integer str);
+	public static String someMethod(Integer num) 
+	{
+		return "Welcome static :" +num;
+		
+	}
+
+}

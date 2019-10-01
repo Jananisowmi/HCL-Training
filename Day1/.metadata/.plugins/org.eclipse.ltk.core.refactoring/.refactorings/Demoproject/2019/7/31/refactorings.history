@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.hcl.java.SbError.java&apos; to &apos;SbExample1.java&apos;&#x0D;&#x0A;- Original project: &apos;Demoproject&apos;&#x0D;&#x0A;- Original element: &apos;com.hcl.java.SbError.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.hcl.java.SbExample1.java&apos;" description="Rename compilation unit &apos;SbError.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.hcl.java{SbError.java" name="SbExample1.java" references="false" stamp="1564397739248" version="1.0"/>
+</session>

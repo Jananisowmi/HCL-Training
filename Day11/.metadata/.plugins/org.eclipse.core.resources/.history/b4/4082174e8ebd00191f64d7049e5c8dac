@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<table border="3" cellpading="10">
+<tr>
+<th>Empno</th>
+<th>Name</th>
+<th>Salary</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>jaanu</td>
+<td>200000</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>anu</td>
+<td>200001</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>anisha</td>
+<td>200002</td>
+</tr>
+
+
+
+</table>
+
+
+
+</center>
+
+</body>
+</html>

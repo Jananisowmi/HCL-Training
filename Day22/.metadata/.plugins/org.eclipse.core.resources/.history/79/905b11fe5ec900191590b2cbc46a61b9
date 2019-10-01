@@ -1,0 +1,10 @@
+package com.hcl.show;
+
+
+
+public class DataQueryDao {
+	 private JdbcTemplate jdbcTemplate {
+
+}
+
+	 private JdbcTemplate jdbcTemplate;

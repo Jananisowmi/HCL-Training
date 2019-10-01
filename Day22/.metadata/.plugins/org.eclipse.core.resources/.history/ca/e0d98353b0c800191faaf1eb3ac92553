@@ -1,0 +1,11 @@
+package com.hcl.bean;
+
+
+
+public class MainProg {
+	
+	public static void main(String[] args) {
+	ApplicationContext
+	}
+
+}

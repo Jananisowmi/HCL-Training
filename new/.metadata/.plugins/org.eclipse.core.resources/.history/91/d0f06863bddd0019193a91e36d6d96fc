@@ -1,0 +1,31 @@
+package com.hcl.json;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;  
+
+public class JsinArray {
+	
+	 
+	public static void main(String args[]){    
+	  JSONObject obj=new JSONObject(); 
+	  for(int i=0;i<3;i++) {
+	  JSONArray arr = new JSONArray();  
+	  arr.add("janu");     
+	  arr.add(new Integer(27));    
+	  arr.add(new Double(600000));
+	  
+	  arr.add("sowmi");    
+	  arr.add(new Integer(27));    
+	  arr.add(new Double(600000));
+	  
+	  arr.add("anisha");    
+	  arr.add(new Integer(27));    
+	  arr.add(new Double(600000));
+	  
+	
+	  
+	  System.out.print(arr);  
+	}  
+
+
+}
+}

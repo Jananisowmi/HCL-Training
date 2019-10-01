@@ -1,0 +1,10 @@
+package com.hcl.fi;
+
+public class InstanceMethodMain {
+	public static void main(String[] args) {
+		
+		MyInterface myInterface=(a) -> {System.out.println("Janu");};
+		
+	}
+
+}

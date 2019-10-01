@@ -1,0 +1,110 @@
+package com.hcl.ex;
+
+public class ThrEx {
+  /**
+   * Method show for business logic.
+   * @param x of integer type passing parameter.
+   */
+  public void show(int x) { 
+    boolean flag = true;
+    if (x < 0) {
+      flag = false;
+      throw new NumberFormatException("Negative Nos Not Aollowed");
+    }
+    if (x == 0) {
+      flag = false;
+      throw new ArithmeticException("Zero is Invalid");
+    }
+  }
+  /**
+   * Main Method for Calling Business Logic.
+   * @param args for passing runtime values.
+   */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  public static void main(String[] args) {
+    try {
+      int n = -12;
+      new ThrEx().show(n);
+    } catch (NumberFormatException e) {
+      System.out.println("e.getmessage()");
+    } catch (ArithmeticException e) {
+      System.out.println("e.getmessage()");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+}
+

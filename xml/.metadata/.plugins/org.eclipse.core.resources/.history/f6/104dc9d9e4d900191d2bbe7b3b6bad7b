@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Employee" xmlns:tns="http://www.example.org/Employee" elementFormDefault="qualified">
+
+
+
+<employee
+xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https:/employee.xsd">
+
+<xs:element name="employee">
+ <xs:complexType>
+<xs:sequence>
+<xs:element name="empNo" type="xs:integer"/>
+<xs:element name="empName" type="xs:string"/>
+<xs:element name="salary" type="xs:decimal"/>
+<xs:element name="band" type="xs:string"/>
+<xs:element name="dateOfJoin" type="xs:date"/>
+</xs:sequence>
+ </xs:complexType>
+</xs:element>
+</xs:schema>
+  
+ 
+<employeedata>
+
+
+
+</schema>

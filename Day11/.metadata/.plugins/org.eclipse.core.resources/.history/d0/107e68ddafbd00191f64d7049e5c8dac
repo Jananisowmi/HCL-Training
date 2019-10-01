@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script>
+  function show() {
+	  var fullname=frmData.fullName.value;
+		//alert("Name is" +sname);
+		document.getElementById("res").innerHTML=" Name is " +fullname;
+	}
+  }
+ 
+ 
+ </script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmNameForm">
+<center>
+<table border="3">
+<tr>
+  <th colspan="2">
+  Name Form
+  </th>
+  </tr>
+  
+	<th>FirstName</th>
+	<td>
+	<input type="text"
+	name="FirstName" />
+	</td>
+	</tr>
+
+<tr>
+<th>LastName</th>
+<td>
+<input type="text"
+name="LastName" />
+</td>
+</tr>
+
+<tr>
+<th>FullName</th>
+<td>
+<input type="text"
+name="FullName" />
+</td>
+</tr>
+FullName :
+  <input type1="FirstName" type2="LastName" name="fullName" />
+  <br/> <br/>
+
+
+
+</body>
+</html>

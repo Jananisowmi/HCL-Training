@@ -1,0 +1,5 @@
+package com.hcl.collec;
+
+public interface Lamda2 {
+
+}

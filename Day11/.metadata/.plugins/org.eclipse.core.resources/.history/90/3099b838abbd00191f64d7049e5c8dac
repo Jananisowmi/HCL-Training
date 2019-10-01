@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+function gotCusor(){
+	alert("Cursor placed");
+	
+	frmData.
+}

@@ -1,0 +1,11 @@
+127.0.0.1 - - [23/Aug/2019:16:26:00 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:16:26:11 +0530] "POST /LibraryProject/Login111 HTTP/1.1" 200 580
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:16:26:15 +0530] "GET /LibraryProject/SearchPrint?searchtype=all&searchvalue= HTTP/1.1" 200 2571
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:16:26:17 +0530] "GET /LibraryProject/Issue?bookid=14 HTTP/1.1" 200 45
+127.0.0.1 - - [23/Aug/2019:19:01:22 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:19:01:23 +0530] "GET /LibraryProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:19:01:39 +0530] "POST /LibraryProject/Login111 HTTP/1.1" 200 580
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:19:01:42 +0530] "GET /LibraryProject/AccountDetailsMenu HTTP/1.1" 404 1060
+127.0.0.1 - - [23/Aug/2019:19:03:53 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:19:04:10 +0530] "POST /LibraryProject/Login111 HTTP/1.1" 200 576
+0:0:0:0:0:0:0:1 - - [23/Aug/2019:19:04:12 +0530] "GET /LibraryProject/AccountDetails HTTP/1.1" 200 890

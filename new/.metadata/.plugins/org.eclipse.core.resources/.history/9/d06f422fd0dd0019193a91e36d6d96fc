@@ -1,0 +1,29 @@
+package com.hcl.json;
+
+import java.io.BufferedReader;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+public class DecodeReadJson {
+	public static void main(String[] args) {
+		JSONObject jsonObject = (JSONObject)JSONValue.parse(s);  
+		  
+    BufferedReader objReader = null;
+    String strCurrentLine;
+    
+	String s="{C:\\Users\\Coalesce\\Downloads\\Employee.json}";
+	while ((strCurrentLine = objReader.readLine()) != null) {
+	    System.out.println(strCurrentLine);
+	
+	  
+    int no = (Integer) jsonObject.get("empNo");  
+    String name = (String) jsonObject.get("empName");  
+    int salary= (Integer) jsonObject.get("salary");  
+    String band=(String) jsonObject.get("band");
+    String dateOfJoin=(String)jsonObject.get("dateOfJoin");
+    System.out.println(jsonObject);
+
+}
+	}
+}
